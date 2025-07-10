@@ -1,9 +1,13 @@
-import ManImage from "./detroixtemplate.png";
+import ManImage from "./heroimage.png";
 import plant from "./plant.png";
 import puzzle from "./puzzle.png";
 import shape from "./shape.png";
 import gearImage from './gearbullet.jpg';
 import speechBubble from './speechbubble.jpg';
+import nine from './nine.png';
+import twentyone from './twenty-one.png';
+import seventeen from './seventeen.png';
+
 function Main(){
   return(
     <main role="main" className="container-fluid">
@@ -146,9 +150,9 @@ function News(){
         <div className="row">
             <div className="col-3">
                 <h4>NEWS</h4>
-                <button className="c21">21 Nov</button>
-                <button className="c9">09 Nov</button>
-                <button className="c17">17 Nov</button>
+                <img src="{twentyone}" className="img-fluid" alt="date box for the 17th"/>
+                <img src="{nine}" className="img-fluid" alt="date box for the 17th"/>
+                <img src="{seventeen}" className="img-fluid" alt="date box for the 17th"/>
                 <button>MORE</button> 
             </div>
             <div className="col-9">
