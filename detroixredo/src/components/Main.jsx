@@ -3,7 +3,9 @@ import plant from "./plant.png";
 import puzzle from "./puzzle.png";
 import shape from "./shape.png";
 import gearImage from './gearbullet.jpg';
-import speechBubble from './speechbubble.jpg';
+
+// import speechBubble from './speechbubble.jpg';
+
 import nine from './nine.png';
 import twentyone from './twenty-one.png';
 import seventeen from './seventeen.png';
@@ -97,16 +99,16 @@ function Infobox(){
         <News/>
     </div>  )
 }  
- const listStyle ={
+ 
+function Services(){
+        const listStyle ={
         listStyleImage:`url(${gearImage})`
  }
-function Services(){
-        
     return(
     <div className="col-4 col-sm-12 services">
        
             <h4>SERVICES</h4>
-            <ul  style={listStyle}>
+            <ul  style={listStyle}> 
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Lorem ipsum dolor sit amet.</li>
@@ -122,14 +124,16 @@ function Services(){
     )
 }
 // *****OPPORTUNITIES***********
-const listStyle={
-    listStyleImage:`url(${speechBubble})`
-}
+ 
+ 
 function Opportunities(){
+    const listStyle={
+     listStyleImage:`url(${speechBubble})`}
     return(
         <div className="col-4 col-sm-12 services">
             <h4>OPPORTUNITIES</h4>
-            <ul style={listStyle}>
+             <ul style={listStyle}> 
+            
                 <li>
                     <h4>Lorem ipsum dolor sit.</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptate.</p>
@@ -150,9 +154,9 @@ function News(){
         <div className="row">
             <div className="col-3">
                 <h4>NEWS</h4>
-                <img src="{twentyone}" className="img-fluid" alt="date box for the 17th"/>
-                <img src="{nine}" className="img-fluid" alt="date box for the 17th"/>
-                <img src="{seventeen}" className="img-fluid" alt="date box for the 17th"/>
+                <img src={twentyone} className="img-fluid" alt="date box for the 17th"/>
+                <img src={nine} className="img-fluid" alt="date box for the 17th"/>
+                <img src={seventeen} className="img-fluid" alt="date box for the 17th"/>
                 <button>MORE</button> 
             </div>
             <div className="col-9">
